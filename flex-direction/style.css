@@ -33,9 +33,14 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border:10px solid goldenrod;
   min-height:100vh;
-  flex-wrap:wrap;
+  flex-direction: row; /* this value is row by default (which defines the main-axis to be 
+  from left to right, and the cross-axis to be from top to bottom. Other values are
+  column, row-reverse, and column-reverse. */
+  flex-wrap:wrap; /* by default this property has a value of nowrap. Can also be wrap-reverse. */
 }
 
 .box {
-  width:33.3333333%;
+  width:calc(33.3333% - 20px); /* here we use calc to ensure the flex-items will fit
+  horizontally in the page */
+  margin: 10px;
 }

@@ -32,7 +32,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
   display:flex;
   border:10px solid mistyrose;
+  /* justify-content: space-between; can also be flex-start (dafault), 
+  center, space-between, and space-around */
   height:100vh;
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; we need to also have a worp to see the
+  effect of this property. It has the same values than justify-content and align-items */
   align-items:flex-start;
 }
 
@@ -50,5 +55,5 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box9 {
   padding-bottom: 50px;
-  align-self:stretch;
+  /* align-self:stretch; */
 }
