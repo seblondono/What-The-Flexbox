@@ -34,13 +34,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box1 {
-  flex-basis: 400px;
-  flex-grow: 1;
-  flex-shrink: 5;
+  flex: 1 5 400px; /* this is a shorthand for flex-grow flex-shrink flex-basis */
+  /* flex-grow: what to do with the extra space?
+     flex-shrink: what to do when there is not enough space for all flex-items?
+     flex-basis: how big are elements to start with?
+  */
 }
 
 .box2 {
-  flex-basis: 400px;
+  flex: 1 1 400px;
 }
 
 
